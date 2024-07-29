@@ -44,6 +44,11 @@
             <article class="product">
               <img class="product__img" src="img/photo-2.jpg" alt="Кокосовая матча" />
               <h3 class="product__title">Кокосовая матча</h3>
+              <div class="product__counter">
+                <button class="product__decrement">-</button>
+                <input class="product__input-counter" type="number" max="99" min="0" value="1" />
+                <button class="product__increment">+</button>
+              </div>
               <p class="product__price">390&nbsp;₽</p>
             </article>
           </li>
@@ -51,6 +56,11 @@
             <article class="product">
               <img class="product__img" src="img/photo-1.jpg" alt="Зеленый индонезийский чай" />
               <h3 class="product__title">Зеленый индонезийский чай</h3>
+              <div class="product__counter">
+                <button class="product__decrement">-</button>
+                <input class="product__input-counter" type="number" max="99" min="0" value="1" />
+                <button class="product__increment">+</button>
+              </div>
               <p class="product__price">340&nbsp;₽</p>
             </article>
           </li>
@@ -58,6 +68,11 @@
             <article class="product">
               <img class="product__img" src="img/photo.jpg" alt="Черный чай из Эфиопии" />
               <h3 class="product__title">Черный чай из Эфиопии</h3>
+              <div class="product__counter">
+                <button class="product__decrement">-</button>
+                <input class="product__input-counter" type="number" max="99" min="0" value="1" />
+                <button class="product__increment">+</button>
+              </div>
               <p class="product__price">380&nbsp;₽</p>
             </article>
           </li>
@@ -65,11 +80,23 @@
             <article class="product">
               <img class="product__img" src="img/photo-5.jpg" alt="Черный чай из Калифорнии" />
               <h3 class="product__title">Черный чай из Калифорнии</h3>
+              <div class="product__counter">
+                <button class="product__decrement">-</button>
+                <input class="product__input-counter" type="number" max="99" min="0" value="1" />
+                <button class="product__increment">+</button>
+              </div>
               <p class="product__price">360&nbsp;₽</p>
             </article>
           </li>
         </ul>
-        <from class="products__delivery">
+        <div class="products__order">
+          <div class="products__order-price">
+            <p class="products__order-describe">Итого:</p>
+            <p class="products__order-total">2200&nbsp;₽</p>
+          </div>
+          <button class="products__order-btn" type="submit" form="form">Заказать</button>
+        </div>
+        <form class="products__delivery" id="form">
           <fieldset class="products__delivery-fieldset">
             <legend class="products__delivery-legend">Доставка</legend>
             <input class="products__delivery-input" type="text" name="name" id="name">
@@ -87,14 +114,7 @@
             </label>
           </fieldset>
 
-          <div class="products__order">
-            <div class="products__order-price">
-              <p class="products__order-describe">Итого:</p>
-              <p class="products__order-total">2200&nbsp;₽</p>
-            </div>
-            <button class="products__order-btn" type="submit">Заказать</button>
-          </div>
-        </from>
+        </form>
       </div>
     </section>
 
