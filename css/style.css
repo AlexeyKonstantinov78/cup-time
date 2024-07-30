@@ -1,0 +1,153 @@
+/* inter-regular - cyrillic */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/inter-v13-cyrillic-regular.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+html {
+  position: relative;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: Inter,
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  background-color: #fff;
+  font-size: 20px;
+  line-height: 1.24;
+  font-weight: 400;
+  color: #1d1c1d;
+
+}
+
+h1,
+h2,
+h3,
+ul,
+ol,
+li,
+p,
+figure,
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+fieldset {
+  border: none;
+}
+
+iframe {
+  border: none;
+}
+
+ul,
+ol,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+svg {
+  max-height: 100%;
+}
+
+button {
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: inherit;
+}
+
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
+.container {
+  max-width: 1400px;
+  padding: 0 50px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 0 24px;
+  position: absolute;
+  top: 24px;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+  color: #fff;
+}
+
+.header__container {
+  max-width: 1392px;
+  backdrop-filter: blur(60px);
+  background: rgba(108, 185, 171, 0.7);
+  padding: 12px 46px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo-link {
+  font-size: 0;
+}
+
+.header__nav {}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.header__menu-item {}
+
+.header__menu-link {}
+
+.header__cart-link {
+  width: 28px;
+  height: 28px;
+  color: #64099b;
+  font-size: 12px;
+  background-image: url("/img/bag.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 10px 4px 3px;
+}
