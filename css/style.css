@@ -242,7 +242,6 @@ button {
   color: #fff;
 }
 
-
 .footer__container {
   display: grid;
   gap: 38px;
@@ -254,17 +253,26 @@ button {
 
 .footer__logo {}
 
-.footer__nav {}
+.footer__nav {
+  font-size: 20px;
+}
 
-.footer__menu {}
+.footer__menu {
+  display: flex;
+  gap: 50px;
+}
 
 .footer__menu-item {}
 
 .footer__menu-link {}
 
-.footer__info {}
+.footer__info {
+  font-size: 16px;
+}
 
-.footer__copyright {}
+.footer__copyright {
+  margin-bottom: 17px;
+}
 
 .footer__description {}
 
@@ -274,12 +282,24 @@ button {
 
 .footer_developer-link {}
 
-.footer__contacts {}
+.footer__contacts {
+  font-size: 16px;
+}
 
-.footer__email {}
+.footer__email {
+  display: block;
+  margin-bottom: 16px;
+}
 
-.footer__socials {}
+.footer__socials {
+  display: flex;
+  gap: 12px;
 
-.footer__social-item {}
+}
+
+.footer__social-item {
+  width: 32px;
+  height: 32px;
+}
 
 .footer_social-link {}
